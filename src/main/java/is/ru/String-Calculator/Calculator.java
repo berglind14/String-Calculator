@@ -9,6 +9,11 @@ public class Calculator {
 	  	else if(text.contains(",")){
 	    	return sum(splitNumbers(text));
 	  	}
+	  	else if(text.contains("\n"))
+	  	{
+	  		text = text.replace("\n", ",");
+	  		return sum(splitNumbers(text));
+	  	}
 	  	else
 	    	return 1;
 	}

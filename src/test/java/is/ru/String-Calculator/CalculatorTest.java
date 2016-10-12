@@ -24,4 +24,14 @@ public class CalculatorTest {
     public void testMultipleNumbers(){
     	assertEquals(6, Calculator.add("1,2,3"));
     }
+
+    @Test
+    public void testUnknownNumbers(){
+    	assertEquals(10, Calculator.add("1,2,3,4"));
+    }
+
+    @Test
+    public void testHandlesNewLines(){
+    	assertEquals(6, Calculator.add("1\n2,3"));
+    }
 }
