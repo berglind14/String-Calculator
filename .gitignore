@@ -1,0 +1,8 @@
+target
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+.D5_Store
