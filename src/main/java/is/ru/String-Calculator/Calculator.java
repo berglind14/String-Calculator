@@ -24,10 +24,21 @@ public class Calculator {
 
 	private static int sum(String[] numbers){
 		int total = 0;
+		//String negatives = "";
 	    for(String number : numbers){
-	    	total += toInt(number);
+	    	if(toInt(number) < 0)
+	    	{
+	    		negatives = negatives + number;
+	    	}
+	    	else
+	    	{
+	    		total += toInt(number);
+	    	}
 	  	}
-	  	return total;
+	  	if(negatives == "")
+	  		return total;
+	  	else
+	  		throw new IllegalArgumentException("Negatives not allowed: " + negatives);
 	}
 	private static int toInt(String number){
   		return Integer.parseInt(number);
