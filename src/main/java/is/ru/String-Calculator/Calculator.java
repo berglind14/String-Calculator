@@ -34,8 +34,7 @@ public class Calculator {
 	    	{
 	    		if(toInt(number) > 999)
 	    		{
-	    			number = 0;
-	    			toString(number);
+	    			number = "0";
 	    		}
 	    		total += toInt(number);
 	    	}
