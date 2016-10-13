@@ -24,7 +24,7 @@ public class Calculator {
 
 	private static int sum(String[] numbers){
 		int total = 0;
-		//String negatives = "";
+		String negatives = "";
 	    for(String number : numbers){
 	    	if(toInt(number) < 0)
 	    	{
