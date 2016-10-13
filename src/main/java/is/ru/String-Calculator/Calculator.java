@@ -32,6 +32,11 @@ public class Calculator {
 	    	}
 	    	else
 	    	{
+	    		if(toInt(number) > 999)
+	    		{
+	    			number = 0;
+	    			toString(number);
+	    		}
 	    		total += toInt(number);
 	    	}
 	  	}
